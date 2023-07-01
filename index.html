@@ -645,6 +645,11 @@
         popupContainers[i].style.display = "none";
       }
     });
+    var paragraphs = document.getElementsByTagName("th");
+    for (var i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/\|/g, '<span class="black-pipe">|</span>');
+    }
+
   </script>
 </body>
 </html>
