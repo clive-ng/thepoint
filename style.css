@@ -220,6 +220,7 @@ hr {
 .popup-content {
   width: 78.125vw; /* Responsive width */
   height: 93.75vw; /* Responsive height */
+  max-height: 600px;
   background-color: #fff;
   /* White background */
   padding: 3.90625vw; /* Responsive padding */
