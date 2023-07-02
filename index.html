@@ -16,12 +16,11 @@
 <div class="wrapper">
     
     <div class="lang">
-        <img style="width: 35px;" src="lang.png" alt="language"><a style="text-decoration: none; color: #898888;" href="en.html">EN</a>
-        
+        <img src="lang.png" alt="language"><a style="text-decoration: none; color: #898888;" href="en.html">EN</a>
     </div>
 
     <div>
-    <img style="width:100%; max-width: 1280px;" src="banner-1024.jpg" alt="banner">
+    <img style="width:100%;" src="banner-1024.jpg" alt="banner">
     </div>
 
     <div class="title">
@@ -32,25 +31,25 @@
 <div class="llinkdiv">
     <table >
         <tr>
-        <th width="220px">香港</th>
+        <th>香港</th>
         <th style="color: #734E3C; font-weight: 400;"><a href="#北角匯">北角匯</a> | <a href="#柴灣新翠商場">柴灣新翠商場</a></th>
     </tr>
 </table >
-    <hr width="98%" color="#815743">
+<hr/>
 <table >
     <tr>
-        <th width="220px">九龍</th>
+        <th>九龍</th>
         <th style="color: #734E3C; font-weight: 400;"><a href="#觀塘apm">觀塘apm</a> | <a href="#新蒲崗Mikiki">新蒲崗Mikiki</a> | <br><a href="#旺角MOKO新世紀廣場">旺角MOKO新世紀廣場</a> | <a href="#南昌VWalk">南昌V Walk</a></th>
 
     </tr>
 </table >
 
-<hr width="98%" color="#815743"/>
+<hr/>
 
 <table >
     
     <tr>
-        <th width="220px">新界</th>
+        <th>新界</th>
         <th style="color: #734E3C; font-weight: 400;"><a href="#將軍澳東港城">將軍澳東港城</a> | <a href="#沙田HomeSquare">沙田HomeSquare</a> |<br><a href="#上水廣場">上水廣場</a> | <a href="#葵芳新都會廣場">葵芳新都會廣場</a> | <br><a href="#沙田新城市廣場">沙田新城市廣場</a> | <a href="#將軍澳中心">將軍澳中心</a> | <br> <a href="#將軍澳天晉滙">將軍澳天晉滙</a> | <a href="#將軍澳中心">將軍澳中心</a> | <a href="#大埔超級城">大埔超級城</a> | <br><a href="#荃灣廣場">荃灣廣場</a> | <a href="#荃灣廣場">大埔新達廣場</a> | <br><a href="#屯門V city">屯門V city</a> | <a href="#元朗YOHO MALL形點">元朗YOHO MALL形點</a> |  
     </th>
     </tr>
@@ -58,16 +57,16 @@
 </div>
 
 
-<hr width="90%" color="#815743"/>
+<hr/>
 <div class="title">如獎賞己全數換領會於此網頁上公佈，<br>實際名額以商場為準。獎賞數量有限，換完即止。
 </div>
-<hr width="90%" color="#815743"/>
+<hr/>
 
 
 
 <div class="tablediv">
-<div>
-    <div class="tabletitle">
+    <div>
+    <div class="title">
         香港
     </div>
 
@@ -77,12 +76,12 @@
         <th>消費禮遇</th>
         <th>名額</th>
     </tr>
-    <tr><td id="北角匯">北角匯</td>
+    <tr>
+        <td id="北角匯">北角匯</td>
             
         <td class="td-container">
             單一消費滿HK$500<br>
-            享HK$50精選零售商戶<br>
-            電子贈券 
+            享HK$50精選零售商戶<br>電子贈券 
             <div class="corner-object">
             <img onclick="togglePopup(1)" src="enlarge.png" alt="enlarge">
             </div>
@@ -104,11 +103,10 @@
             </div>
         </div>
 
-
-
         <td>100</td>
     </tr>
-    <tr><td id="柴灣新翠商場">柴灣新翠商場</td>
+    <tr>
+        <td id="柴灣新翠商場">柴灣新翠商場</td>
 
         <td class="td-container">
             單一消費滿HK$1,000<br>
@@ -171,11 +169,10 @@
             <h2>觀塘apm</h2>
             <ul>
                 <li>於推廣期及換領券有效日期內，在apm以電子貨幣即日單一消費滿HK$1,000，並於消費交易日當天前往消費商場之顧客服務中心出示換領券、有效之商戶機印發票及相符之電子貨幣付款存根正本，獲批核後可享HK$50餐飲優惠券。</li>
-                <li> 優惠受條款及細則約束，詳情請向顧客服務中心查詢。</li>
+                <li>優惠受條款及細則約束，詳情請向顧客服務中心查詢。</li>
               </ul>
             </div>
         </div>
-
 
         <td>200</td>
     </tr>
@@ -647,6 +644,12 @@
     for (var i = 0; i < paragraphs.length; i++) {
       paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/\|/g, '<span class="black-pipe">|</span>');
     }
+    window.addEventListener('load', function() {
+      var pngImages = document.querySelectorAll('img[src$=".png"]');
+      pngImages.forEach(function(img) {
+        img.classList.add('icon');
+      });
+    });
 
   </script>
 </body>
