@@ -29,7 +29,8 @@ a:visited {
 
 
 .lang {
-
+width: 120px;
+color: #898888;
   position: absolute;
   margin-left: 1090px;
   margin-top: 80px;
