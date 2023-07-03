@@ -1,18 +1,32 @@
+html{
+  scroll-behavior: smooth;
+  height: 200vh;
+}
 body {
   font-family: 'Noto Sans HK', sans-serif;
-  font-size: 3.125vw; /* Responsive font size */
+  font-size: 3.125vw;
+  /* Responsive font size */
   color: #878787;
   margin: 0;
+
+
 }
 
 h2 {
   text-align: center;
-  font-size: 4.625vw; /* Responsive font size */
+  font-size: 4.625vw;
+  /* Responsive font size */
 }
 
 p {
   text-align: left;
-  font-size: 3.4375vw; /* Responsive font size */
+  font-size: 3.4375vw;
+  /* Responsive font size */
+}
+
+li {
+  line-height: 1.2em;
+  margin-bottom: 1.2em;
 }
 
 a {
@@ -27,21 +41,26 @@ a:visited {
 }
 
 hr {
-  width:95%;
+  width: 95%;
   border: 1px solid #815743;
-  margin-top: 2.75vw; /* Responsive margin-top */
+  margin-top: 2.75vw;
+  /* Responsive margin-top */
 
 }
 
 .lang {
-  width: 9.375vw; /* Responsive width */
+  width: 9.375vw;
+  /* Responsive width */
   color: #898888;
   position: absolute;
-  right: 8.59375vw; /* Responsive margin-left */
-  top: 6.875vw; /* Responsive margin-top */
+  right: 8.59375vw;
+  /* Responsive margin-left */
+  top: 6.875vw;
+  /* Responsive margin-top */
   z-index: 1;
   display: flex;
   align-items: center;
+
 }
 
 
@@ -66,19 +85,24 @@ hr {
 
 .title {
   text-align: center;
-  margin-top: 6.01562vw; /* Responsive margin-top */
+  margin-top: 6.01562vw;
+  margin-bottom: 6.01562vw;
+  /* Responsive margin-top */
 }
 
 .tabletitle {
   text-align: center;
-  margin-top: 8.59375vw; /* Responsive margin-top */
+  margin-top: 8.59375vw;
+  /* Responsive margin-top */
 }
 
 /* Link */
 .llinkdiv {
   text-align: left;
-  line-height: 6.25vw; /* Responsive line-height */
-  margin-bottom: 0.15625vw; /* Responsive margin-bottom */
+  line-height: 6.25vw;
+  /* Responsive line-height */
+  margin-bottom: 0.15625vw;
+  /* Responsive margin-bottom */
   vertical-align: top;
   width: 100%;
 }
@@ -92,7 +116,8 @@ hr {
 .llinkdiv th,
 .llinkdiv td {
   padding: 0.3125vw;
-  min-width: 1.25vw; /* Responsive min-width */
+  min-width: 1.25vw;
+  /* Responsive min-width */
   vertical-align: top;
   text-align: left;
 }
@@ -109,39 +134,50 @@ hr {
 
 /* Content */
 .tablediv {
-  font-size: 2.734375vw; /* Responsive font size */
-  margin: 1.5625vw; /* Responsive margin */
+  font-size: 2.734375vw;
+  /* Responsive font size */
+  margin: 1.5625vw;
+  /* Responsive margin */
   color: #734E3C;
 }
 
 .tablediv div {
-  margin-bottom: 2.5vw; /* Responsive margin-bottom */
+  margin-bottom: 2.5vw;
+  /* Responsive margin-bottom */
 }
 
 .tablediv table {
   table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 93.359375vw; /* Responsive min-width */
+  min-width: 93.359375vw;
+  /* Responsive min-width */
 }
 
 .tablediv table tr th:first-child {
-  width: 25.78125vw; /* Responsive width */
+  width: 25.78125vw;
+  /* Responsive width */
 }
 
 .tablediv table tr th,
 .tablediv table tr td {
-  border-right: 0.03125vw solid #bbb; /* Responsive border-right */
-  border-bottom: 0.03125vw solid #bbb; /* Responsive border-bottom */
-  padding: 0.3125vw; /* Responsive padding */
-  padding-top: 3.75vw; /* Responsive padding-top */
-  padding-bottom: 3.75vw; /* Responsive padding-bottom */
+  border-right: 0.03125vw solid #bbb;
+  /* Responsive border-right */
+  border-bottom: 0.03125vw solid #bbb;
+  /* Responsive border-bottom */
+  padding: 0.3125vw;
+  /* Responsive padding */
+  padding-top: 3.75vw;
+  /* Responsive padding-top */
+  padding-bottom: 3.75vw;
+  /* Responsive padding-bottom */
   text-align: center;
 }
 
 .tablediv table tr th:first-child,
 .tablediv table tr td:first-child {
-  border-left: 0.03125vw solid #bbb; /* Responsive border-left */
+  border-left: 0.03125vw solid #bbb;
+  /* Responsive border-left */
 }
 
 .tablediv table th:nth-child(1) {
@@ -160,31 +196,39 @@ hr {
 
 .tablediv table tr th {
   background: #E0C894;
-  border-top: 0.03125vw solid #bbb; /* Responsive border-top */
+  border-top: 0.03125vw solid #bbb;
+  /* Responsive border-top */
   text-align: center;
-  padding: 0.3125vw; /* Responsive padding */
-  padding-top: 1.875vw; /* Responsive padding-top */
-  padding-bottom: 1.875vw; /* Responsive padding-bottom */
+  padding: 0.3125vw;
+  /* Responsive padding */
+  padding-top: 1.875vw;
+  /* Responsive padding-top */
+  padding-bottom: 1.875vw;
+  /* Responsive padding-bottom */
 }
 
 /* top-left border-radius */
 .tablediv table tr:first-child th:first-child {
-  border-top-left-radius: 1.5625vw; /* Responsive border-top-left-radius */
+  border-top-left-radius: 1.5625vw;
+  /* Responsive border-top-left-radius */
 }
 
 /* top-right border-radius */
 .tablediv table tr:first-child th:last-child {
-  border-top-right-radius: 1.5625vw; /* Responsive border-top-right-radius */
+  border-top-right-radius: 1.5625vw;
+  /* Responsive border-top-right-radius */
 }
 
 /* bottom-left border-radius */
 .tablediv table tr:last-child td:first-child {
-  border-bottom-left-radius: 0.625vw; /* Responsive border-bottom-left-radius */
+  border-bottom-left-radius: 0.625vw;
+  /* Responsive border-bottom-left-radius */
 }
 
 /* bottom-right border-radius */
 .tablediv table tr:last-child td:last-child {
-  border-bottom-right-radius: 0.625vw; /* Responsive border-bottom-right-radius */
+  border-bottom-right-radius: 0.625vw;
+  /* Responsive border-bottom-right-radius */
 }
 
 .td-container {
@@ -196,8 +240,10 @@ hr {
   position: absolute;
   bottom: 0px;
   right: 0;
-  right: 1.5625vw; /* Responsive right */
-  bottom: 0.625vw; /* Responsive bottom */
+  right: 1.5625vw;
+  /* Responsive right */
+  bottom: 0.625vw;
+  /* Responsive bottom */
 }
 
 /* Styling for the popup window */
@@ -218,28 +264,40 @@ hr {
 }
 
 .popup-content {
-  width: 78.125vw; /* Responsive width */
-  height: 93.75vw; /* Responsive height */
+  width: 78.125vw;
+  /* Responsive width */
+  height: 93.75vw;
+  /* Responsive height */
   max-height: 600px;
   background-color: #fff;
   /* White background */
-  padding: 3.90625vw; /* Responsive padding */
+  padding: 3.90625vw;
+  /* Responsive padding */
   padding-top: 0;
-  border-radius: 1.875vw; /* Responsive border-radius */
-  box-shadow: 0 0 0.625vw rgba(0, 0, 0, 0.3); /* Responsive box-shadow */
+  border-radius: 1.875vw;
+  /* Responsive border-radius */
+  box-shadow: 0 0 0.625vw rgba(0, 0, 0, 0.3);
+  /* Responsive box-shadow */
   /* Shadow effect */
   position: relative;
   overflow: auto;
 }
 
 .close-button {
-  font-size: 4.625vw; /* Responsive font size */
+  font-size: 4.625vw;
+  /* Responsive font size */
   position: absolute;
   text-decoration: none;
-  top: 3.75vw; /* Responsive top */
-  right: 3.125vw; /* Responsive right */
+  top: 3.75vw;
+  /* Responsive top */
+  right: 3.125vw;
+  /* Responsive right */
 }
 
 .black-pipe {
   color: black;
+}
+
+.top-space {
+  margin-top: 20px;
 }
